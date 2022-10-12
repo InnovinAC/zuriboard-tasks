@@ -10,3 +10,4 @@ $content = $name.", ".$email.", ".$date_of_birth.", ".$gender.", ".$country;
 
 fwrite($f, $content);
 fclose($f);
+print_r($content);
