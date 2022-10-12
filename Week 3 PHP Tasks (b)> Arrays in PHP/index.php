@@ -7,7 +7,7 @@
   </head>
   
   <body>
-    <form action="userdata.php" method="post">
+    <form action="user_data.php" method="post">
       <label>Name</label>
       <input type="text" name="name" placeholder="Enter your name...">
       <br>
