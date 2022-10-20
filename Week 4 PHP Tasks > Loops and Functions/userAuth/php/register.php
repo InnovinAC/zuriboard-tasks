@@ -11,7 +11,12 @@ registerUser($username, $email, $password);
 function registerUser($username, $email, $password){
     //save data into the file
     
-    // echo "OKAY";
+    $file = fopen("./storage/users.csv", 'w');
+    $content = [$username, $email, $password];
+    fputcsv($file, $content);
+    fclose($file);
+    
+    echo "OKAY";
 }
 echo "HANDLE THIS PAGE";
 
