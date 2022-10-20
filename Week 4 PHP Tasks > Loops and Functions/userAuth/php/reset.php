@@ -17,6 +17,7 @@ function resetPassword($email, $password){
     if($email == $user_email) {
         $details = array($user_name, $email, $password);
         fputcsv($file, $details);   
+        fclose($file);
     }
     
     else {
